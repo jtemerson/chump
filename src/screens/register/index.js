@@ -24,19 +24,19 @@ function RegisterScreen({user}){
   return (
     <form onSubmit={submit}>
       <fieldset>
-        <legend>Login:</legend>
+        <legend>Register:</legend>
         <div>
-          <label>Username: <input required type="text" ref={el=>usernameInput = el}/></label>
+          <label>Username: <input required type="text" className="form-control" ref={el=>usernameInput = el}/></label>
         </div>
         <div>
-          <label>Password: <input required type="password" ref={el=>passwordInput = el}/></label>
+          <label>Password: <input required type="password" className="form-control" ref={el=>passwordInput = el}/></label>
         </div>
         <div>
-          <label>Email: <input required type="email" ref={el=>emailInput = el}/></label>
+          <label>Email: <input required type="email" className="form-control" ref={el=>emailInput = el}/></label>
         </div>
         <div>
+          <p><button className="btn btn-success">Register</button></p>
           <Link to="/login">Login</Link>
-          <button>Register</button>
         </div>
       </fieldset>
     </form>

@@ -32,15 +32,18 @@ class HomeScreen extends Component {
 
     return (
       <form onSubmit={submit}>
+      <legend>Comments:</legend>
         {messages.map((msg)=>{
           if (msg.type === 'text')
             return (
-            <div key={msg.id}>{msg.data.value}</div>
-          )
+              <a href="#" className="list-group-item" key={msg.id}>{msg.data.value}</a>
+            )
         })}
-        <div>
-          <input required type="text" ref={el=>textInput = el}/>
-          <button>Send</button>
+        <div className="row">
+          <div className="col-md-3">
+            <p><input className="form-control messageForm" required placeholder="Enter Message" type="text" id="messageInput" ref={el=>textInput = el}/></p>
+            <button className="btn btn-success">Send</button>
+          </div>
         </div>
       </form>
     )

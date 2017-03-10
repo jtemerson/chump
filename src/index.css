@@ -3,3 +3,19 @@ body {
   padding: 40px;
   font-family: sans-serif;
 }
+
+a{
+  color: #2b2763;
+  transition: 2s;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #3e3a71;
+  font-size: 2em;
+}
+
+.messageForm{
+  margin-top: 5%;
+}

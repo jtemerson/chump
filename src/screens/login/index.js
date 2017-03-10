@@ -25,14 +25,14 @@ function LoginScreen({user}){
       <fieldset>
         <legend>Login:</legend>
         <div>
-          <label>Username: <input required type="text" ref={el=>usernameInput = el}/></label>
+          <label>Username: <input className="form-control" required type="text" ref={el=>usernameInput = el}/></label>
         </div>
         <div>
-          <label>Password: <input required type="password" ref={el=>passwordInput = el}/></label>
+          <label>Password: <input className="form-control" required type="password" ref={el=>passwordInput = el}/></label>
         </div>
         <div>
+          <p><button className="btn btn-success">Login</button></p>
           <Link to="/register">Register</Link>
-          <button>Login</button>
         </div>
       </fieldset>
     </form>
